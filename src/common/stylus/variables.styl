@@ -1,0 +1,24 @@
+//页面主体颜色
+$mainColor = #ff2a0c
+//使盒子内元素垂直水平居中
+boxCenter() { 
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  -webkit-box-align:center;
+  -webkit-box-pack:center; /* 兼容uc浏览器 */
+}
+/* 
+多行文字溢出隐藏 ，填1 则为单行溢出隐藏
+num ： 多行文字需要隐藏的行数
+ */
+textOverflowHide(num){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: num;
+  -webkit-box-orient:vertical;
+}
